@@ -1,0 +1,61 @@
+.basic-repeater
+{
+  font-size: 16px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  justify-content: space-between;
+
+  border-radius: 3px;
+  border: 1px solid #b6b6b6;
+  background-color: #d1d1d1;
+
+  width: 300px;
+  padding: 1em;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.basic-repeater .repeater-button
+{
+  border-radius: 3px;
+  width: 20px;
+  height: 60px;
+}
+
+.basic-repeater .repeater-button.active
+{
+  -webkit-transition: all .1s ease-out;
+  -moz-transition:    all .1s ease-out;
+  -o-transition:      all .1s ease-out;
+  -ms-transition:     all .1s ease-out;
+  transition:         all .1s ease-out;
+}
+
+.basic-repeater .repeater-button.red { background-color: #702f2f; }
+.basic-repeater .repeater-button.red:hover { background-color: #f00; }
+.basic-repeater .repeater-button.red.active { background-color: #f00; }
+
+.basic-repeater .repeater-button.yellow { background-color: #79792d; }
+.basic-repeater .repeater-button.yellow:hover { background-color: #ff0; }
+.basic-repeater .repeater-button.yellow.active { background-color: #ff0; }
+
+.basic-repeater .repeater-button.green { background-color: #236623; }
+.basic-repeater .repeater-button.green:hover { background-color: #0f0; }
+.basic-repeater .repeater-button.green.active { background-color: #0f0; }
+
+.basic-repeater .repeater-button.cyan { background-color: #2a7c7c; }
+.basic-repeater .repeater-button.cyan:hover { background-color: #0ff; }
+.basic-repeater .repeater-button.cyan.active { background-color: #0ff; }
+
+.basic-repeater .repeater-button.blue { background-color: #29296d; }
+.basic-repeater .repeater-button.blue:hover { background-color: #00f; }
+.basic-repeater .repeater-button.blue.active { background-color: #00f; }
+
+.basic-repeater .repeater-button.magenta { background-color: #662566; }
+.basic-repeater .repeater-button.magenta:hover { background-color: #f0f; }
+.basic-repeater .repeater-button.magenta.active { background-color: #f0f; }
+
