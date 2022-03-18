@@ -1,4 +1,30 @@
-.basic-repeater
+.repeater-wrapper
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.repeater-wrapper .repeater-reset
+{
+  border-radius: 3px;
+  
+  border: 1px solid #b6b6b6;
+  background-color: #d1d1d1;
+
+  width: 335px;
+  height: 20px;
+
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.repeater-wrapper .repeater-reset:hover
+{
+  background-color: #a1a1a1;
+}
+
+.repeater-buttons
 {
   font-size: 16px;
 
@@ -19,14 +45,14 @@
   margin-right: auto;
 }
 
-.basic-repeater .repeater-button
+.repeater-buttons .repeater-button
 {
   border-radius: 3px;
   width: 20px;
   height: 60px;
 }
 
-.basic-repeater .repeater-button.active
+.repeater-buttons .repeater-button.active
 {
   -webkit-transition: all .1s ease-out;
   -moz-transition:    all .1s ease-out;
@@ -35,27 +61,27 @@
   transition:         all .1s ease-out;
 }
 
-.basic-repeater .repeater-button.red { background-color: #702f2f; }
-.basic-repeater .repeater-button.red:hover { background-color: #f00; }
-.basic-repeater .repeater-button.red.active { background-color: #f00; }
+.repeater-buttons .repeater-button.red { background-color: #702f2f; }
+.repeater-buttons .repeater-button.red:hover { background-color: #f00; }
+.repeater-buttons .repeater-button.red.active { background-color: #f00; }
 
-.basic-repeater .repeater-button.yellow { background-color: #79792d; }
-.basic-repeater .repeater-button.yellow:hover { background-color: #ff0; }
-.basic-repeater .repeater-button.yellow.active { background-color: #ff0; }
+.repeater-buttons .repeater-button.yellow { background-color: #79792d; }
+.repeater-buttons .repeater-button.yellow:hover { background-color: #ff0; }
+.repeater-buttons .repeater-button.yellow.active { background-color: #ff0; }
 
-.basic-repeater .repeater-button.green { background-color: #236623; }
-.basic-repeater .repeater-button.green:hover { background-color: #0f0; }
-.basic-repeater .repeater-button.green.active { background-color: #0f0; }
+.repeater-buttons .repeater-button.green { background-color: #236623; }
+.repeater-buttons .repeater-button.green:hover { background-color: #0f0; }
+.repeater-buttons .repeater-button.green.active { background-color: #0f0; }
 
-.basic-repeater .repeater-button.cyan { background-color: #2a7c7c; }
-.basic-repeater .repeater-button.cyan:hover { background-color: #0ff; }
-.basic-repeater .repeater-button.cyan.active { background-color: #0ff; }
+.repeater-buttons .repeater-button.cyan { background-color: #2a7c7c; }
+.repeater-buttons .repeater-button.cyan:hover { background-color: #0ff; }
+.repeater-buttons .repeater-button.cyan.active { background-color: #0ff; }
 
-.basic-repeater .repeater-button.blue { background-color: #29296d; }
-.basic-repeater .repeater-button.blue:hover { background-color: #00f; }
-.basic-repeater .repeater-button.blue.active { background-color: #00f; }
+.repeater-buttons .repeater-button.blue { background-color: #29296d; }
+.repeater-buttons .repeater-button.blue:hover { background-color: #00f; }
+.repeater-buttons .repeater-button.blue.active { background-color: #00f; }
 
-.basic-repeater .repeater-button.magenta { background-color: #662566; }
-.basic-repeater .repeater-button.magenta:hover { background-color: #f0f; }
-.basic-repeater .repeater-button.magenta.active { background-color: #f0f; }
+.repeater-buttons .repeater-button.magenta { background-color: #662566; }
+.repeater-buttons .repeater-button.magenta:hover { background-color: #f0f; }
+.repeater-buttons .repeater-button.magenta.active { background-color: #f0f; }
 

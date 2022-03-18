@@ -68,10 +68,15 @@ const BasicRepeater = (props) => {
     )
   }
 
+  const resetRepeater = () => {
+    setPattern([]);
+    setCount(-1);
+  }
+
   useEffect(() => {
 
     const timer = setTimeout(() => {
-      if(pattern.length > 0) {
+      if(pattern.length > 1) {
         playSound(pattern[count]);
 
         if(count === pattern.length - 1) {
@@ -81,20 +86,29 @@ const BasicRepeater = (props) => {
           setCount(count + 1);
         }
         
+      } 
+
+      if(pattern.length === 1) {
+        playSound(pattern[0]);
       }
-    }, 500)
+
+    }, 1000)
     return () => clearTimeout(timer);
   }, [pattern, count])
 
   return (
-    <div className="basic-repeater">
+    <div className="repeater-wrapper">
+      <div className="repeater-buttons">
       { generateRepeaterButton("red", "one") }
       { generateRepeaterButton("yellow", "two") }
       { generateRepeaterButton("green", "three") }
       { generateRepeaterButton("cyan", "four") }
       { generateRepeaterButton("blue", "five") }
       { generateRepeaterButton("magenta", "six") }
+      </div>
+      <div className="repeater-reset" onClick={ () => resetRepeater() }></div>
     </div>
+    
   )
 }
 
